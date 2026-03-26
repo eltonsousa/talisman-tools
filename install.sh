@@ -41,6 +41,20 @@ for rc in "/root/.bashrc" "/home/talisman/.bashrc"; do
     fi
 done
 
+# 1. Garante o comando no sistema todo (sem reboot)
+sudo ln -sf /home/talisman/.talisman-tools/menu.sh /usr/local/bin/menu
+sudo chmod +x /usr/local/bin/menu
+
+# 2. Abre o menu para o usuário imediatamente
+clear
 echo "============================================================"
 echo "   INSTALAÇÃO CONCLUÍDA! DIGITE 'menu' PARA COMEÇAR."
 echo "============================================================"
+echo "============================================================"
+echo "   ABRINDO O MENU..."
+echo "============================================================"
+
+sleep 3
+
+bash /home/talisman/.talisman-tools/menu.sh
+
