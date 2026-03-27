@@ -76,7 +76,7 @@ if [[ "$SIM_NAO" =~ ^[Ss]$ ]]; then
     echo -e "------------------------------------------"
     
 else
-    aviso "Instalação abortada."
+    aviso "Instalação abortada!"
 fi
 
 linha
