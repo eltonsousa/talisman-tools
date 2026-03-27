@@ -5,7 +5,7 @@
 # DESENVOLVIDO POR: ELTON SOUSA
 # ==========================================================
 
-# CONFIGURAÇÃO DE ATALHO
+# CONFIGURAÇÃO DE ATALHO DO MENU
 if ! grep -q "alias talisman=" ~/.bashrc; then
     echo "alias talisman='bash /home/talisman/.talisman-tools/menu.sh'" >> ~/.bashrc
     echo "alias menu='bash /home/talisman/.talisman-tools/menu.sh'" >> ~/.bashrc

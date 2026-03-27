@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# CONFIGURAÇÕES
+# CONFIGURAÇÕES:
 TARGET_DIR="/home/talisman/.talisman-tools"
 ZIP_URL="https://github.com/eltonsousa/talisman-tools/archive/refs/heads/main.zip"
 

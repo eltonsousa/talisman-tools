@@ -24,7 +24,7 @@ erro() { echo -e "${VERMELHO}[ERRO]${SEM_COR} $1"; }
 clear
 titulo "DESINSTALADOR - LOGMEIN HAMACHI"
 
-# VERIFICAÇÃO DE ROOT
+# VERIFICAÇÃO DE [ROOT]
 if [ "$EUID" -ne 0 ]; then
     erro "POR FAVOR, EXECUTE COMO ROOT (SUDO -S)"
     exit
