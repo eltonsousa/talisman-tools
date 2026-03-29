@@ -49,7 +49,7 @@ if [[ "$SIM_NAO" =~ ^[Ss]$ ]]; then
     read -p "  > EMAIL: " NEW_EMAIL
     
     # QUERY USANDO MD5 E COLUNA 'pv' (conforme seu código funcional)
-    mysql -u root -p"$SENHA_MYSQL" -e "INSERT INTO db_account.t_account (name, pwd, pw2, email, pv) VALUES ('$NEW_USER', MD5('$NEW_PASS'), MD5('$NEW_PASS2'), '$NEW_EMAIL', 9);" 2>/dev/null
+    mysql -u root -p"$SENHA_MYSQL" -e "INSERT INTO db_account.t_account (name, pwd, pw2, email, pv) VALUES ('$NEW_USER', MD5('$NEW_PASS'), ('$NEW_PASS2'), '$NEW_EMAIL', 9);" 2>/dev/null
     
     if [ $? -eq 0 ]; then
         echo -e "\n${VERDE_B}------------------------------------------------------------"
